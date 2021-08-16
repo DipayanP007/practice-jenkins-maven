@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com/', 'dockerhub_id') {
+    docker.withRegistry('https://registry.hub.docker.com/', 'dockerhub') {
 
         def customImage = docker.build("dipayanp007/dockermavenapp")
 
